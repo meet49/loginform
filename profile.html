@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Profile Page</h2>
+        <button onclick="logout()">Logout</button>
+        <hr>
+        <h3>Welcome</h3>
+        <h4>Name:
+            <script>
+                document.write(localStorage.getItem("name"))
+            </script>
+        </h4>
+        <h4>Email:
+            <script>
+                document.write(localStorage.getItem("email"))
+            </script>
+        </h4>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+
+</html>
